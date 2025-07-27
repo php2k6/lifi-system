@@ -79,7 +79,7 @@ This project implements a Light Fidelity (LiFi) communication system that can be
 
 #### Circuit
 
-![Circuit](images/my_circuit_diagram.png)
+![Circuit](images/my_ciruit_diagram.png)
 
 ### 2. Software Setup
 
@@ -261,10 +261,6 @@ if (!current_state && previous_state) {
 - **Secure Communications**: Military, banking, and government applications requiring contained data transmission
 - **Underwater Communication**: Submersible vehicles and underwater research where RF signals fail
 - **Medical Devices**: Safe communication in MRI rooms and other electromagnetically sensitive medical environments
-- **Data Centers**: High-speed optical interconnects between servers and networking equipment
-- **Automotive V2X**: Vehicle-to-infrastructure communication using headlights and traffic signals
-- **Emergency Communication**: Disaster relief scenarios using portable LED transmitters
-- **Educational Demonstrations**: STEM education and research applications
 
 
 ## Contributing
