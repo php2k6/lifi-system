@@ -61,7 +61,7 @@ This project implements a Light Fidelity (LiFi) communication system that can be
 [Computer] ──► [Transmitter MCU] ──► [LED] ~~~light~~~ [Photodiode] ──► [Receiver MCU] ──► [Computer]
 ```
 
-![System Architecture](images/system_architecture.png)
+![Block Diagam](images/block_diagram.png)
 
 ### Communication Flow
 1. **Input**: User types message on transmitter-connected computer
@@ -71,26 +71,15 @@ This project implements a Light Fidelity (LiFi) communication system that can be
 5. **Decoding**: Receiver converts light patterns back to text
 6. **Output**: Decoded message displayed on receiver-connected computer
 
-![Communication Flow Diagram](images/communication_flow.png)
+
 
 ## Installation & Setup
 
 ### 1. Hardware Assembly
 
-#### Transmitter Circuit
-```
-MCU Pin 3 ──► 220Ω Resistor ──► LED(+) ──► LED(-) ──► GND
-```
+#### Circuit
 
-![Transmitter Circuit](images/transmitter_circuit.png)
-
-#### Receiver Circuit
-```
-VCC ──► 10kΩ Resistor ──► Photodiode(Anode) ──► MCU Pin D5
-                     └──► Photodiode(Cathode) ──► GND
-```
-
-![Receiver Circuit](images/receiver_circuit.png)
+![Circuit](images/my_circuit_diagram.png)
 
 ### 2. Software Setup
 
@@ -101,12 +90,11 @@ VCC ──► 10kΩ Resistor ──► Photodiode(Anode) ──► MCU Pin D5
    - Upload `TRANSMITTER_SIDE.ino` to transmitter microcontroller
    - Upload `RECEIVER_SIDE.ino` to receiver microcontroller
 
-![Setup Process](images/setup_process.png)
 
 ### 3. Environment Setup
 
 1. **Position devices**: Ensure line-of-sight between LED and photodiode
-2. **Optimal distance**: Start with 10-50cm separation
+2. **Optimal distance**: Start with 10-150cm separation
 3. **Lighting conditions**: Works best in dim ambient light
 4. **Alignment**: Point LED directly at photodiode for best performance
 
@@ -120,8 +108,6 @@ VCC ──► 10kΩ Resistor ──► Photodiode(Anode) ──► MCU Pin D5
    - Receiver: 115200 baud rate
 3. **Send message**: Type text in transmitter serial monitor and press Enter
 4. **Receive message**: View decoded text in receiver serial monitor
-
-![Working Demo](images/working_demo.png)
 
 ### Example Communication Session
 
